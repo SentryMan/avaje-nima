@@ -1,4 +1,4 @@
-import io.avaje.nima.provider.DefaultConfigProvider;
+import io.avaje.nima.provider.DefaultNimaProvider;
 
 module io.avaje.nima {
 
@@ -10,5 +10,5 @@ module io.avaje.nima {
   requires transitive io.avaje.jsonb;
   requires transitive io.helidon.nima.webserver;
 
-  provides io.avaje.inject.spi.Plugin with DefaultConfigProvider;
+  provides io.avaje.inject.spi.Plugin with DefaultNimaProvider;
 }
